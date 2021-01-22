@@ -1,175 +1,216 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Profile</title>
+    <title>Profile</title>
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwigqOby8ubkAhUrBGMBHQLECXQQjRx6BAgBEAQ&url=http%3A%2F%2Fpngimg.com%2Fimgs%2Fheroes%2Fminions%2F&psig=AOvVaw2nvP5m_FTt24H2d1ldq0u2&ust=1569326491431770">
+    <link rel="icon" type="image/png"
+        href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwigqOby8ubkAhUrBGMBHQLECXQQjRx6BAgBEAQ&url=http%3A%2F%2Fpngimg.com%2Fimgs%2Fheroes%2Fminions%2F&psig=AOvVaw2nvP5m_FTt24H2d1ldq0u2&ust=1569326491431770">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Rokkitt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
 </head>
-    <div class="parallax1" id="HomeSection">
-        <div class="nAme">
-            <h1 class="namE">Leigh-Jean Rustin</h1>
-            <h1 class="tip">Scroll Down</h1>
-            <h1 class="arrow"><i class="fas fa-angle-down"></i></h1>
-        </div>
+<div class="parallax1" id="HomeSection">
+    <div class="nAme">
+        <h1 class="namE">Leigh-Jean Rustin</h1>
+        <h1 class="tip">Scroll Down</h1>
+        <h1 class="arrow"><i class="fas fa-angle-down"></i></h1>
     </div>
-    <div class="parallax2">
-        <div class="header">
-            <h1 class="head">Portfolio</h1>
-            <div class="line1"></div>
+</div>
+<div class="parallax2">
+    <div class="header">
+        <h1 class="head">Portfolio</h1>
+        <div class="line1"></div>
+    </div>
+    <div class="sidenav">
+        <p class="logo" onClick>LR</p>
+        <br>
+        <br>
+        <a href="#HomeSection" class="home"><i class="fas fa-home" style="font-size:35px;"></i></a>
+        <br>
+        <a href="#AboutSection" id="About"><i class="fas fa-users" style="font-size:35px;"></i></a>
+        <br>
+        <a href="#EducationSection" id="Education"><i class="fas fa-graduation-cap" style="font-size:35px"></i></a>
+        <br>
+        <a href="#LanguagesSection" id="Languages"><i class="fas fa-laptop-code" style="font-size:35px"></i></a>
+        <br>
+        <a href="#ContactSection" id="Contact Me At"><i class="far fa-address-card" style="font-size:35px;"></i></a>
+    </div>
+    <div class="margin">
+        <div class="about" id="AboutSection">
+            <h1 class="title">About Me</h1>
+            <hr />
+            <div class="row">
+                <div class="col-sm-9">
+                    <h3 class=secondTitle>UI/UX Designer & Developer</h3>
+                    <p>I am currently working on my course in hopes to become a full-stack web developer. I am
+                        passionate about what I do, and what I like to make a successful career out of it. I have had
+                        experience in python, javaScript, HTML, CSS, and reactJS. However, I find that most of my skills
+                        lie in HTML, CSS, and reactJS as I'm more passionate about front end developing.</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="personal">
+                        <h3 class="secondTitle"><b>Personal Details</b></h3>
+                        <p><b>Full Name:</b> Leigh-Jean Rustin</p>
+                        <p><b>Date of Birth:</b> 22 April 2000</p>
+                        <p><b>Lives In:</b> Athlone, Cape Town</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sidenav">
-            <p class="logo">LR</p>
-            <br>
-            <br>
-            <a href="#HomeSection" class="home"><i class="fas fa-home" style="font-size:35px;"></i></a>
-            <br>
-            <a href="#AboutSection" id="About"><i class="fas fa-users" style="font-size:35px;"></i></a>
-            <br>
-            <a href="#EducationSection" id="Education"><i class="fas fa-graduation-cap" style="font-size:35px"></i></a>
-            <br>
-            <a href="#LanguagesSection" id="Languages"><i class="fas fa-laptop-code" style="font-size:35px"></i></a>
-            <br>
-            <a href="#ContactSection" id="Contact Me At"><i class="far fa-address-card" style="font-size:35px;"></i></a>
+        <br>
+        <div class="education" id="EducationSection">
+            <h1 class="title">Education</h1>
+            <hr />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget,
+                bibendum elit. In facilisis blandit ipsum, at blandit odio eleifend vel. Duis ac tempus justo, ut
+                malesuada nulla. Etiam eros sapien, scelerisque nec enim finibus, porta semper elit. Duis at nunc
+                turpis. Nulla aliquet nisl vel dictum ornare. Ut eu turpis eget augue placerat placerat in non lorem.
+                Donec quis mi diam. Sed bibendum nec erat eget eleifend. Maecenas nisl ligula, sollicitudin eu quam in,
+                rhoncus posuere ex. Quisque quis ultrices mauris. Sed non porta nunc, id iaculis purus. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam pretium accumsan nunc,
+                vel sollicitudin augue ultricies at. Quisque euismod tempor blandit.</p>
         </div>
-        <div class="margin">
-            <div class="about" id="AboutSection">
-                <h1 class="title">About Me</h1>
-                <hr/>
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <h3 class=secondTitle>UI/UX Designer & Developer</h3>
-                            <p>I am currently working on my course in hopes to become a full-stack web developer. I am passionate about what I do, and what I like to make a successful career out of it. I have had experience in python, javaScript, HTML, CSS, and reactJS. However, I find that most of my skills lie in HTML, CSS, and reactJS as I'm more passionate about front end developing.</p>
-                        </div>
-                        <div class="col-sm-3">      
-                            <div class="personal">
-                                <h3 class="secondTitle"><b>Personal Details</b></h3>
-                                <p><b>Full Name:</b> Leigh-Jean Rustin</p>
-                                <p><b>Date of Birth:</b> 22 April 2000</p>
-                                <p><b>Lives In:</b> Athlone, Cape Town</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <br>
-            <div class="education" id="EducationSection">
-                <h1 class="title">Education</h1>
-                <hr/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget, bibendum elit. In facilisis blandit ipsum, at blandit odio eleifend vel. Duis ac tempus justo, ut malesuada nulla. Etiam eros sapien, scelerisque nec enim finibus, porta semper elit. Duis at nunc turpis. Nulla aliquet nisl vel dictum ornare. Ut eu turpis eget augue placerat placerat in non lorem. Donec quis mi diam. Sed bibendum nec erat eget eleifend. Maecenas nisl ligula, sollicitudin eu quam in, rhoncus posuere ex. Quisque quis ultrices mauris. Sed non porta nunc, id iaculis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam pretium accumsan nunc, vel sollicitudin augue ultricies at. Quisque euismod tempor blandit.</p>
-            </div>
-            <br>
-            <div class="languages" id="LanguagesSection">
-                <h1 class="title">Programming Languages</h1>
-                <hr/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget, bibendum elit. In facilisis blandit ipsum, at blandit odio eleifend vel. Duis ac tempus justo, ut malesuada nulla. Etiam eros sapien, scelerisque nec enim finibus, porta semper elit. Duis at nunc turpis. Nulla aliquet nisl vel dictum ornare. Ut eu turpis eget augue placerat placerat in non lorem. Donec quis mi diam. Sed bibendum nec erat eget eleifend. Maecenas nisl ligula, sollicitudin eu quam in, rhoncus posuere ex. Quisque quis ultrices mauris. Sed non porta nunc, id iaculis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam pretium accumsan nunc, vel sollicitudin augue ultricies at. Quisque euismod tempor blandit.</p>
-                <h1 class="title">Services</h1>
-                <hr/>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p class="inlined"><i id="services" class="fas fa-paint-brush" style="font-size:55px;"></i></p>
-                        <p class="inlined">Web Design</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p class="inlined"><i id="services" class="fas fa-chart-bar" style="font-size:60px;"></i></p>
-                        <p class="inlined">web development</p>
-                    </div>
-                    <div className="inlined" class="col-sm-4">
-                        <p class="inlined"><i id="services" class="fas fa-laptop" style="font-size:55px;"></i></p>
-                        <p class="inlined">Interface Design</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <br>
-                <h1 class="title">Projects</h1>
-                <hr/>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="contact" id="ContactSection">
-                <h1 class="title">Get in Touch with Me</h1>
-                <h4>If you want to get in touch with me, talk to me about a project collaboration or just say hi, fill up the awesome form below or or contact me at any of my socials below.</h4>
-                <h4>~Let's talk.</h4>
-                <br>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <button class="linkedSocials" onclick="location.href='https://www.linkedin.com/in/leigh-jean-rustin-319837194/';">
-                                <i class="fab fa-linkedin" className="socials" style="font-size:50px;"></i>
-                                <p class="socials">LinkedIn</p>
-                            </button>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="linkedSocials"  onclick="location.href='mailto:ljxrustin@gmail.com';">
-                                <i class="fas fa-envelope" className="socials" style="font-size:50px"></i>
-                                <p class="socials">Gmail</p>
-                            </button>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="linkedSocials" onclick="location.href='https://google.com';">
-                                <i class="fab fa-github-square" className="socials" style="font-size:50px"></i>
-                                <p class="socials">GitHub</p>
-                            </button>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="linkedSocials">
-                                <i class="fas fa-phone-square" style="font-size:50px"></i>
-                                <p class="socials">061 452 1985</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <form action="/action_page.php">
-                                <label for="name">Name:</label><br>
-                                <input type="text" class="name" name="fname"><br>
-                                <label for="subject">Subject:</label><br>
-                                <input type="text" class="subject" name="lname"><br><br>
-                                <input type="submit" class="send" value="Send Message">
-                              </form> 
-                        </div>
-                        <div class="col-sm-6">
-                            <form action="/action_page.php">
-                                <label for="message">Message</label>
-                                <input type="text" class="message">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row">
+        <br>
+        <div class="languages" id="LanguagesSection">
+            <h1 class="title">Programming Languages</h1>
+            <hr />
+            <div class="row">
+                <div class="col-sm-4">
 
-                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+            <h1 class="title">Services</h1>
+            <hr />
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="inlined"><i id="services" class="fas fa-chart-bar" style="font-size:60px;"></i></p>
+                    <p class="inlined">Web development</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="inlined"><i id="services" class="fas fa-paint-brush" style="font-size:55px;"></i></p>
+                    <p class="inlined">Web Design</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="inlined"><i id="services" class="fas fa-laptop" style="font-size:55px;"></i></p>
+                    <p class="inlined">Interface Design</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>I create websites from scratch to fit all the necessary requirements</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>I create websites that are built for an optimal user experience that achieves all your goals and
+                        needs.</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>I create responsive websites that are made to be viewed on any device and screen resolution.</p>
                 </div>
             </div>
             <br>
+            <h1 class="title">Projects</h1>
+            <hr />
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin
+                        urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin
+                        urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin
+                        urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin
+                        urna eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
         </div>
-    </div>    
+        <br>
+        <div class="contact" id="ContactSection">
+            <h1 class="title">Get in Touch with Me</h1>
+            <h4>If you want to get in touch with me, talk to me about a project collaboration or just say hi, fill in
+                the form below or or contact me at any of my socials below.</h4>
+            <h4>~Let's talk.</h4>
+            <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <button class="linkedSocials"
+                            onclick="location.href='https://www.linkedin.com/in/leigh-jean-rustin-319837194/';">
+                            <i class="fab fa-linkedin" className="socials" style="font-size:50px;"></i>
+                            <p class="socials">LinkedIn</p>
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="linkedSocials" onclick="location.href='mailto:ljxrustin@gmail.com';">
+                            <i class="fas fa-envelope" className="socials" style="font-size:50px"></i>
+                            <p class="socials">Gmail</p>
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="linkedSocials" onclick="location.href='https://google.com';">
+                            <i class="fab fa-github-square" className="socials" style="font-size:50px"></i>
+                            <p class="socials">GitHub</p>
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="linkedSocials">
+                            <i class="fas fa-phone-square" style="font-size:50px"></i>
+                            <p class="socials">061 452 1985</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="contactForm.php" method="POST">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="name">Name:</label><br>
+                            <input type="text" class="name" name="name" required><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" class="email" name="email" required><br><br>
+                            <input type="submit" class="send" value="Send Message">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="message">Message</label>
+                            <input type="text" class="message" required>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
 </body>
+
 </html>
