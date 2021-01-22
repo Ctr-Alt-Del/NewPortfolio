@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
@@ -65,16 +67,65 @@
         </div>
         <br>
         <div class="education" id="EducationSection">
-            <h1 class="title">Education</h1>
-            <hr />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit auctor, sollicitudin urna eget,
-                bibendum elit. In facilisis blandit ipsum, at blandit odio eleifend vel. Duis ac tempus justo, ut
-                malesuada nulla. Etiam eros sapien, scelerisque nec enim finibus, porta semper elit. Duis at nunc
-                turpis. Nulla aliquet nisl vel dictum ornare. Ut eu turpis eget augue placerat placerat in non lorem.
-                Donec quis mi diam. Sed bibendum nec erat eget eleifend. Maecenas nisl ligula, sollicitudin eu quam in,
-                rhoncus posuere ex. Quisque quis ultrices mauris. Sed non porta nunc, id iaculis purus. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam pretium accumsan nunc,
-                vel sollicitudin augue ultricies at. Quisque euismod tempor blandit.</p>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h1 class="title">Education</h1>
+                </div>
+                <div class="col-sm-9">
+                    <!-- <h2>LC Studios</h2>
+                    <h4>Web Development</h4>
+                    <p>Currently doing 3-6 month internship </p>
+                    <br/> -->
+                    <h2>Life Choices</h2>
+                    <h4>Web Development</h4>
+                    <p>Did a 6 month course at Life Choices where I studied HTML, CSS, JavaScript, Python as well as React JS.</p>
+                    <br>
+                    <h2>iCollege</h2>
+                    <h4>Information Technology</h4>
+                    <p>Did a 12 month course learning the hardware sides of computers.</p>
+                    <br/>
+                    <h2>Alexander Sinton High School</h2>
+                    <h4>High School</h4>
+                    <p>Matriculated high school in the year 2017.</p>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-sm-3">
+                    <h3><b>Year:</b> 2019</h3>
+                    <hr/>
+                </div>
+                <div class="col-sm-9">
+                    <h3><b>Life Choices</b></h3>
+                    <hr/>
+                    <h4>Web Development</h4>
+                    <p>Did a 6 month course at Life Choices where i studies HTML, CSS, JavaScript, Python as well as React JS.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3><b>Year:</b> 2018</h3>
+                    <hr/>
+                </div>
+                <div class="col-sm-9">
+                    <h3><b>iCollege</b></h3>
+                    <hr/>
+                    <h4>Information Technology</h4>
+                    <p>Did a 12 month course learning the hardware sides of computers.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3><b>Year:</b> 2013 - 2017</h3>
+                    <hr/>
+                </div>
+                <div class="col-sm-9">
+                    <h3><b>Alexander Sinton High School</b></h3>
+                    <hr/>
+                    <h4>High School</h4>
+                    <p>Matriculated</p>
+                </div>
+            </div> -->
         </div>
         <br>
         <div class="languages" id="LanguagesSection">
@@ -82,24 +133,32 @@
             <hr />
             <div class="row">
                 <div class="col-sm-4">
+                    <p class="inlined"><i class="fab fa-html5" style="font-size:70px"></i></p>
+                    <p class="inlined">HTML</p>
 
                 </div>
                 <div class="col-sm-4">
-
+                    <p class="inlined"><i class="fab fa-js-square" style="font-size:70px"></i></p>
+                    <p class="inlined">JavaScript</p>
                 </div>
                 <div class="col-sm-4">
-
+                    <p class="inlined"><i class="fab fa-react" style="font-size:70px"></i></p>
+                    <p class="inlined">React JS</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
-
+                    <p class="inlined"><i class="fab fa-css3-alt" style="font-size:70px"></i></p>
+                    <p class="inlined">CSS</p>
                 </div>
                 <div class="col-sm-4">
-
+                    <p class="inlined"><i class="fab fa-python" style="font-size:70px"></i></p>
+                    <p class="inlined">Python</p>
                 </div>
                 <div class="col-sm-4">
-
+                    <p class="inlined"><span class="devicons devicons-go"
+                            style="font-size: 70px; font-weight: bold;"></span></p>
+                    <p class="inlined">GoLang</p>
                 </div>
             </div>
             <h1 class="title">Services</h1>
@@ -187,25 +246,21 @@
                         </div>
                     </div>
                 </div>
-                <form action="contactForm.php" method="POST">
+                <form action="contactForm.php" method="post">
                     <div class="row">
                         <div class="col-sm-6">
                             <label for="name">Name:</label><br>
-                            <input type="text" class="name" name="name" required><br>
+                            <input type="text" class="name" name="Name" required><br>
                             <label for="email">Email:</label><br>
-                            <input type="email" class="email" name="email" required><br><br>
-                            <input type="submit" class="send" value="Send Message">
+                            <input type="email" class="email" name="Email" required><br><br>
+                            <input type="submit" class="send" name="Submit" value="Send Message">
                         </div>
                         <div class="col-sm-6">
                             <label for="message">Message</label>
-                            <input type="text" class="message" required>
+                            <input type="text" class="message" name="Message" required>
                         </div>
                     </div>
                 </form>
-
-                <div class="row">
-
-                </div>
             </div>
         </div>
         <br>

@@ -1,15 +1,38 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $email_from = 'formcontact976@gmail.com';
-    $email_subject = "Getting in touch";
-    $email_body = "User Name: $name.\n"
-                    "User Email: $visitor_email.\n"
-                    "User Message: $message.\n"
-    $to = "ljxrustin@gmail.com";
-    $headers = "From $email_from \r\n";
-    $headers .= "Reply-To: $visitor_email \r\n";
-    mail($to,$email_subject,$email_body,$headers);
-    header("Location: Index.html");
-?>
+
+$EmailFrom = "chriscoyier@gmail.com";
+$EmailTo = "ljxrustin@gmail.com";
+$Subject = "Getting In Touch";
+$Name = Trim(stripslashes($_POST['Name'])); 
+$Email = Trim(stripslashes($_POST['Email'])); 
+$Message = Trim(stripslashes($_POST['Message'])); 
+
+// validation
+$validationOK=true;
+if (!$validationOK) {
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  exit;
+}
+
+// prepare email body text
+$Body = "";
+$Body .= "Name: ";
+$Body .= $Name;
+$Body .= "\n";
+$Body .= "Email: ";
+$Body .= $Email;
+$Body .= "\n";
+$Body .= "Message: ";
+$Body .= $Message;
+$Body .= "\n";
+
+$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+
+if ($success){
+    print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+  }
+  else{
+    print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  }
+
+//   https://sajjaadfrancis.github.io/my-portfolio-react/
