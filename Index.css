@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+body {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Rokkitt', serif;
+    margin: 0%;
+    font-size: 10px;
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.parallax1 {
+    background-color: black;
+    background-image: url("Weird.gif");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:75%;
+    height: 100%;
+}
+
+.parallax2 {
+    background-color: black;
+    background-image: url("Weird.gif");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:75%;
+}
+
+.namE{
+    margin-top: 35%;
+    color: rgb(3, 154, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 4px rgb(3, 154, 255); 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-family: 'Lora';
+    align-items: center;
+    display: inline-block;
+    height: 100%;
+}
+
+.tip{
+    color: rgb(3, 154, 255);
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 0 0px 10px rgb(3, 154, 255), 0 0px 30px rgb(3, 154, 255); 
+}
+
+.sidenav{
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 0.8;
+}
+
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover{
+    color: rgb(3, 188, 255);
+    text-decoration: none;
+    text-shadow: 0 1px 3px rgb(3, 154, 255); 
+}
+
+.margin{
+    margin-left: 70px;
+    padding: 0px 10px;
+}
+
+.about{
+    background-color: white;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.languages{
+    background-color: white;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.services{
+    background-color: white;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.contact{
+    background-color: white;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.education{
+    background-color: white;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.projects{
+    background-color: white;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.logo{
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(3, 154, 255);
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-left: 9px;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 3px solid rgb(165, 165, 165);
+    padding: 10px;
+}
+
+input[type=text]:focus {
+    border: 3px solid rgb(3, 154, 255);
+}
+
+.message{
+    padding-bottom: 145px;
+}
+
+.send{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.send:hover{
+    color: rgb(3, 154, 255);
+    border: 3px solid rgb(3, 154, 255);
+}
+
+@media only screen and (max-device-width: 800px){
+    .tip{
+        visibility: hidden;
+    }
+}
+
+.arrow{
+    color: rgb(3, 154, 255);
+    font-size: 25px;
+    text-shadow: 0 0px 10px rgb(3, 154, 255), 0 0px 30px rgb(3, 154, 255); 
+    margin-top: -1%;
+}
+
+@media only screen and (max-device-width: 800px){
+    .arrow{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-device-width: 800px) {
+  .parallax {
+    height: 100%;
+  }
+}
+
+.nAme{
+    width: 100%;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.head{
+    color: rgb(3, 154, 255);
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Rokkitt', serif;
+}
+
+.header{
+    border-style: solid;
+    background-color: black; 
+    border-color: black;
+    box-shadow: 0 -10px 20px 0 rgb(3, 154, 255); 
+    margin-left: 67px;
+}
+
+.socials{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.fa-github-square, .fa-envelope, .fa-linkedin{
+    width: 100%;
+    text-align: center;
+}
+
+.personal{
+    border: 2px solid black;
+    padding-left: 10px;
+    border-top: white;
+    border-right: white;
+    border-bottom: white
+}
+
+.linkedSocials{
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(255, 255, 255);
+    border-width: 3px;
+    padding-top: 15px;
+}
+
+.linkedSocials:hover{
+    border-style: solid;
+    border-color: rgb(3, 154, 255);
+    background-color: rgba(3, 154, 255, 0.179);
+    box-shadow: 0 0px 7px 0 rgba(3, 154, 255);
+    /* background-color: black; */
+}
+
+.linkedSocials:hover{
+    color: rgb(3, 154, 255);
+}
+
+.inlined{
+    display: inline-block;
+    font-size: 30px;
+}
